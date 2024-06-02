@@ -1,5 +1,14 @@
-To setup just :
+<div>  To setup just :
+
   git clone <project-link>
+  
   npm install
-To start:
-  npm start
+
+</div>
+
+<div>
+  To start:
+    npm start
+
+</div>
+
