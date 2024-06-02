@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <%- include('./partials/scripts') %>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+    <div class="mt-4 mx-4 ">
+        <div class="flex justify-center">
+            <img src="<%= blog.coverimageURL %>" width="700px"  />
+        </div>
+        <div class="mt-4 flex items-center justify-center">
+            <img src="<%= blog.createdBy.profileImageUrl %>" width="40px" class="mr-4"/> <div class="flex text-xl font-poppins">by <%= blog.createdBy.fullName%></div> 
+        </div>
+       <div class ="flex justify-center mt-4">
+        <h1 class="text-4xl font-poppins"><%= blog.title %></h1>
+       </div>
+       <div class="mx-8">
+        <pre class="flex flex-wrap mt-4 font-poppins font-normal whitespace-pre-wrap">
+            <%= blog.body %>
+        </pre>
+       </div>
+        
+    </div>
+
+
+</body>
+</html>
